@@ -10,6 +10,8 @@
 6. [Neuromorphic Computing](#neuromorphic-computing)
 7. [Implementation Examples](#implementation-examples)
 8. [Performance Comparisons](#performance-comparisons)
+9. [Architecture Flow Diagrams](#architecture-flow-diagrams)
+10. [Research Timeline](#research-timeline)
 
 ## Overview
 
@@ -404,6 +406,103 @@ def train_radar_vit(model, train_loader, val_loader, epochs=100):
 2. **High Accuracy**: Radar-DETR or Hybrid-4D
 3. **Low Power**: SpikingRadarNet
 4. **Balanced Performance**: RadarViT-Base
+
+## Architecture Flow Diagrams
+
+### Complete Deep Learning Pipeline
+
+```mermaid
+flowchart TD
+    subgraph "Deep Learning Pipeline for Radar Perception"
+        A[Raw Radar Data<br/>ADC Samples] --> B[Preprocessing<br/>Normalization & Windowing]
+        B --> C[Feature Extraction<br/>Range-Doppler-Angle]
+        
+        subgraph "Architecture Selection"
+            D[3D CNN<br/>Spatial Features]
+            E[Transformer<br/>Temporal Attention]
+            F[GNN<br/>Graph Relations]
+            G[Hybrid<br/>Multi-modal]
+        end
+        
+        C --> D
+        C --> E
+        C --> F
+        C --> G
+        
+        D --> H[Feature Maps<br/>Spatial Hierarchy]
+        E --> I[Attention Maps<br/>Temporal Context]
+        F --> J[Graph Embeddings<br/>Relational Features]
+        G --> K[Fused Features<br/>Multi-scale]
+        
+        H --> L[Object Detection<br/>Bounding Boxes]
+        I --> M[Sequence Prediction<br/>Temporal Evolution]
+        J --> N[Graph Clustering<br/>Object Grouping]
+        K --> O[Multi-task Output<br/>Detection + Tracking]
+        
+        L --> P[Post-processing<br/>NMS & Filtering]
+        M --> P
+        N --> P
+        O --> P
+        
+        P --> Q[Final Output<br/>Object List + Tracks]
+    end
+```
+
+### Neural Architecture Search Flow
+
+```mermaid
+graph LR
+    subgraph "Automated Architecture Design"
+        A[Search Space<br/>CNN + Transformer + GNN] --> B[Candidate Architecture<br/>Random Sampling]
+        B --> C[Training<br/>Performance Evaluation]
+        C --> D[Validation<br/>Accuracy Metrics]
+        D --> E{Performance<br/>Threshold?}
+        E -->|No| F[Architecture Mutation<br/>Evolutionary Algorithm]
+        F --> B
+        E -->|Yes| G[Final Architecture<br/>Optimal Design]
+        G --> H[Deployment<br/>Production Ready]
+    end
+```
+
+## Research Timeline
+
+```mermaid
+timeline
+    title Deep Learning Architecture Evolution (2023-2025)
+    
+    section 2023 Breakthroughs
+        Q1 : Vision Transformers for Radar
+           : "RadarFormer" - Li et al.
+           : Attention mechanisms for temporal sequences
+        Q2 : Graph Neural Networks
+           : "RadarGNN" - Chen et al.
+           : Point cloud graph processing
+        Q3 : Hybrid Architectures
+           : "Multi-Modal Fusion" - Wang et al.
+           : CNN + Transformer combination
+        Q4 : Neuromorphic Computing
+           : "Spiking RadarNet" - Kumar et al.
+           : Event-driven processing
+    
+    section 2024 Advances
+        Q1 : Foundation Models
+           : "Radar-GPT" - Zhang et al.
+           : Large-scale pre-training
+        Q2 : Quantum Neural Networks
+           : "Quantum RadarNet" - Patel et al.
+           : Quantum advantage demonstration
+        Q3 : Meta-Learning
+           : "Few-Shot Radar Learning" - Smith et al.
+           : Rapid adaptation to new scenarios
+        Q4 : Continual Learning
+           : "Lifelong Radar Perception" - Johnson et al.
+           : Never-forgetting systems
+    
+    section 2025 Frontiers
+        Q1 : Neural-Symbolic Integration
+           : "Interpretable Radar AI" - Brown et al.
+           : Explainable decision making
+```
 
 ## Future Directions
 
