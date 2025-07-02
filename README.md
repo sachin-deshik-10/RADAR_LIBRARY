@@ -7,11 +7,29 @@
 
 A comprehensive collection of radar datasets, detection algorithms, tracking methods, and sensor fusion techniques for autonomous systems and robotics applications.
 
----
-
 ## 🎯 Overview
 
-This repository serves as a comprehensive resource for radar-based perception in autonomous systems. It includes curated datasets, state-of-the-art methods, implementation guides, and practical tools for researchers and engineers working with radar technology.
+This repository serves as a **state-of-the-art resource** for radar-based perception in autonomous systems. It includes curated datasets, cutting-edge methods, implementation guides, and practical tools for researchers and engineers working with radar technology.
+
+## 📖 Complete Documentation Suite
+
+**📚 [Full Documentation Guide](docs/README.md)** - Start here for comprehensive navigation of all resources
+
+### Core Documentation
+
+- **[Literature Review](docs/literature_review.md)** - 150+ papers (2020-2025), deep learning, 4D radar, sensor fusion
+- **[Deep Learning Architectures](docs/deep_learning_architectures.md)** - CNNs, transformers, GNNs, neuromorphic computing
+- **[Advanced Signal Processing](docs/advanced_signal_processing.md)** - Adaptive CFAR, compressed sensing, MIMO, cognitive radar
+- **[Research Gaps & Future Architectures](docs/research_gaps_and_architectures.md)** - Novel solutions, quantum processing, distributed systems
+- **[Datasets & Benchmarks](docs/datasets_and_benchmarks.md)** - Public datasets, synthetic generation, evaluation protocols
+- **[Industry Applications](docs/industry_applications.md)** - Case studies from Tesla, Waymo, aerospace, healthcare
+- **[Ethics & Responsible AI](docs/ethics_and_responsible_ai.md)** - Privacy, fairness, safety, regulatory frameworks
+
+### Quick Access by Role
+
+- **🔬 Researchers**: Start with [Literature Review](docs/literature_review.md) → [Research Gaps](docs/research_gaps_and_architectures.md)
+- **👨‍💻 Engineers**: Begin with [Industry Applications](docs/industry_applications.md) → [Signal Processing](docs/advanced_signal_processing.md)
+- **🎓 Students**: [Literature Review](docs/literature_review.md) → [Deep Learning](docs/deep_learning_architectures.md) → [Applications](docs/industry_applications.md)
 
 ## 📋 Table of Contents
 
