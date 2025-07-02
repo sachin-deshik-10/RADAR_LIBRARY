@@ -19,11 +19,12 @@ This document provides a comprehensive guide to radar datasets available for res
 ### Automotive Radar Datasets
 
 #### nuScenes-RadarNet (2024)
+
 - **Description**: Extended nuScenes dataset with high-resolution 4D radar data
 - **Size**: 1,000 scenes, 40,000 radar frames
 - **Format**: HDF5 with range-doppler-angle tensors
 - **Annotations**: 3D bounding boxes, tracking IDs, semantic labels
-- **Link**: https://www.nuscenes.org/radarnet
+- **Link**: <https://www.nuscenes.org/radarnet>
 
 ```python
 # nuScenes-RadarNet data loading example
@@ -48,6 +49,7 @@ class NuScenesRadarLoader:
 ```
 
 #### CARRADA (Car Radar Dataset)
+
 - **Description**: Synchronized camera and radar data for autonomous driving
 - **Size**: 30 sequences, 7,000+ frames
 - **Resolution**: Range-Azimuth-Doppler tensors (256×64×64)
@@ -55,6 +57,7 @@ class NuScenesRadarLoader:
 - **Applications**: Object detection, semantic segmentation
 
 #### Bosch Radar Dataset
+
 - **Description**: Industrial-grade automotive radar dataset
 - **Features**: Multi-weather conditions, various traffic scenarios
 - **Size**: 100+ hours of driving data
@@ -63,6 +66,7 @@ class NuScenesRadarLoader:
 ### Maritime Radar Datasets
 
 #### MarineRadar-2024
+
 - **Description**: Ship detection and classification dataset
 - **Coverage**: Coastal and open sea scenarios
 - **Weather**: Various sea states and weather conditions
@@ -87,12 +91,14 @@ class MarineRadarDataset:
 ### Weather Radar Datasets
 
 #### NEXRAD-ML (2024)
+
 - **Description**: Machine learning ready NEXRAD weather radar data
 - **Coverage**: Continental United States
 - **Temporal**: 10+ years of data
 - **Applications**: Weather prediction, precipitation estimation
 
 #### European Weather Radar Archive
+
 - **Description**: Pan-European weather radar composite
 - **Resolution**: 1 km spatial, 15-minute temporal
 - **Applications**: Nowcasting, climate studies
@@ -100,6 +106,7 @@ class MarineRadarDataset:
 ### Security and Surveillance Datasets
 
 #### PerimeterRadar-Synthetic
+
 - **Description**: Synthetic perimeter security radar dataset
 - **Scenarios**: Human intrusion, vehicle detection, clutter scenarios
 - **Size**: 100,000 synthetic radar returns
@@ -108,6 +115,7 @@ class MarineRadarDataset:
 ### Gesture Recognition Datasets
 
 #### RadarGestures-60GHz
+
 - **Description**: 60 GHz radar gesture recognition dataset
 - **Gestures**: 10 common hand gestures
 - **Subjects**: 50 participants

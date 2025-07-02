@@ -672,6 +672,7 @@ class AdaptiveRadarPipeline:
 | Cognitive RL | O(H) | O(B) | Yes |
 
 Where:
+
 - K: Number of spatial-temporal degrees of freedom
 - H: Hidden layer size
 - N: Signal length

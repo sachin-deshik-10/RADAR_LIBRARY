@@ -1,6 +1,7 @@
 # Deep Learning Architectures for Radar Perception
 
 ## Table of Contents
+
 1. [Overview](#overview)
 2. [Convolutional Neural Networks](#convolutional-neural-networks)
 3. [Transformer Architectures](#transformer-architectures)

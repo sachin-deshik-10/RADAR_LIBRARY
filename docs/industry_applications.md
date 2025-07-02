@@ -87,12 +87,14 @@ class Tesla4DRadarStack:
 ```
 
 **Results**:
+
 - 23% improvement in object detection in heavy rain
 - 31% reduction in false positives during snow conditions
 - 15% increase in detection range for small objects
 - 99.97% availability in diverse weather conditions
 
 **Business Impact**:
+
 - $2.3B saved in sensor costs compared to LiDAR-heavy systems
 - 40% reduction in perception-related disengagements
 - Enabled deployment in additional geographic markets
@@ -151,12 +153,14 @@ class BoschAEBSystem:
 ```
 
 **Performance Metrics**:
+
 - 45% improvement in pedestrian detection accuracy
 - 67% reduction in false brake activations
 - Detection range increased from 80m to 120m
 - Response time reduced to 150ms
 
 **Economic Impact**:
+
 - Estimated prevention of 12,000 accidents annually
 - $450M in avoided insurance claims
 - 15% increase in customer satisfaction scores
@@ -220,12 +224,14 @@ class EurocontrolAIRadar:
 ```
 
 **Operational Results**:
+
 - 34% increase in airspace capacity
 - 28% reduction in controller workload
 - 91% accuracy in conflict prediction (5-minute horizon)
 - 15% reduction in fuel consumption due to optimized routing
 
 **Strategic Impact**:
+
 - €1.2B annual savings in delay costs
 - Enabled 18% increase in flight operations
 - Improved safety margin by 25%
@@ -293,6 +299,7 @@ class MilitaryCognitiveRadar:
 ```
 
 **Performance Achievements**:
+
 - 67% improvement in stealth target detection
 - 89% resistance to electronic warfare attacks
 - 45% increase in detection range for small drones
@@ -377,12 +384,14 @@ class SmartPortRadarSystem:
 ```
 
 **Operational Impact**:
+
 - 23% increase in port throughput
 - 31% reduction in vessel waiting times
 - 89% accuracy in vessel arrival time prediction
 - 95% reduction in security incidents
 
 **Financial Benefits**:
+
 - €127M annual increase in port revenue
 - €45M savings in operational costs
 - 40% reduction in insurance premiums
@@ -454,6 +463,7 @@ class OffshoreWindFarmRadar:
 ```
 
 **Results**:
+
 - 34% reduction in unplanned downtime
 - 28% increase in maintenance efficiency
 - 91% accuracy in failure prediction (30-day horizon)
@@ -544,12 +554,14 @@ class MedicalRadarMonitor:
 ```
 
 **Clinical Outcomes**:
+
 - 96% accuracy in heart rate measurement (±2 BPM)
 - 94% accuracy in respiration rate measurement
 - 67% reduction in false alarms compared to contact sensors
 - 23% improvement in patient comfort scores
 
 **Healthcare Impact**:
+
 - Reduced risk of healthcare-associated infections
 - Enabled continuous monitoring for COVID-19 patients
 - 15% reduction in nursing workload for vital signs collection
@@ -620,6 +632,7 @@ class ElderlyFallDetectionSystem:
 ```
 
 **System Performance**:
+
 - 97% accuracy in fall detection
 - 89% accuracy in fall risk prediction (24-hour horizon)
 - 3% false positive rate
@@ -726,12 +739,14 @@ class SmartCityTrafficRadar:
 ```
 
 **Urban Impact**:
+
 - 27% reduction in average commute times
 - 19% decrease in traffic-related emissions
 - 34% improvement in emergency vehicle response times
 - 91% accuracy in traffic incident detection
 
 **Economic Benefits**:
+
 - S$450M annual savings in productivity losses
 - S$78M reduction in fuel costs
 - 25% increase in public transport efficiency
@@ -807,6 +822,7 @@ class FloodMonitoringRadar:
 ```
 
 **Protection Results**:
+
 - 95% accuracy in water level measurement (±2 cm)
 - 87% accuracy in flood prediction (6-hour horizon)
 - 45-minute average early warning lead time
@@ -892,12 +908,14 @@ class IndustrialEquipmentRadar:
 ```
 
 **Manufacturing Impact**:
+
 - 43% reduction in unplanned downtime
 - 31% decrease in maintenance costs
 - 67% improvement in equipment availability
 - 89% accuracy in failure prediction (30-day horizon)
 
 **Financial Returns**:
+
 - €23M annual savings in maintenance costs
 - €67M avoided production losses
 - 12% increase in overall plant efficiency
@@ -990,6 +1008,7 @@ class PerimeterSecurityRadar:
 ```
 
 **Security Performance**:
+
 - 98% detection rate for human intruders
 - 95% reduction in false alarms
 - 2.3-second average threat identification time
