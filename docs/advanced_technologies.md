@@ -53,6 +53,7 @@ graph TB
 ### Latest Quantum Radar Research (2024-2025)
 
 **1. "Room-Temperature Quantum Radar Processing"**
+
 - **Authors**: Zhang, Q. et al. (2025)
 - **Journal**: Nature Quantum Information
 - **DOI**: [10.1038/s41534-025-00987-6](https://doi.org/10.1038/s41534-025-00987-6)
@@ -64,6 +65,7 @@ graph TB
 - **Code**: [https://github.com/zhang-q/QuantumRadar](https://github.com/zhang-q/QuantumRadar)
 
 **2. "Quantum Machine Learning for 4D Radar"**
+
 - **Authors**: Patel, R. et al. (2025)
 - **Conference**: Quantum AI 2025
 - **DOI**: [10.48550/arXiv.2025.12345](https://arxiv.org/abs/2025.12345)
@@ -186,6 +188,7 @@ graph LR
 **Latest Neuromorphic Research:**
 
 **"Neuromorphic Radar Processing with 1000x Energy Efficiency"**
+
 - **Authors**: Kim, S. et al. (2025)
 - **Journal**: Nature Electronics
 - **DOI**: [10.1038/s41928-025-01234-5](https://doi.org/10.1038/s41928-025-01234-5)
