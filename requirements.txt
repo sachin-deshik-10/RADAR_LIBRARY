@@ -1,0 +1,38 @@
+# Essential dependencies
+numpy>=1.20.0
+scipy>=1.7.0
+matplotlib>=3.3.0
+scikit-learn>=1.0.0
+opencv-python>=4.5.0
+
+# Deep learning frameworks
+torch>=1.9.0
+torchvision>=0.10.0
+
+# Radar-specific libraries
+radarsimpy>=1.0.0
+
+# Data processing
+pandas>=1.3.0
+h5py>=3.1.0
+imageio>=2.9.0
+
+# Visualization
+seaborn>=0.11.0
+plotly>=5.0.0
+ipywidgets>=7.6.0
+
+# Development tools (optional)
+pytest>=6.2.0
+pytest-cov>=2.12.0
+black>=21.0.0
+flake8>=3.9.0
+mypy>=0.910
+
+# Documentation (optional)
+sphinx>=4.0.0
+sphinx-rtd-theme>=0.5.0
+nbsphinx>=0.8.0
+
+# Hardware integration (optional)
+pyserial>=3.5

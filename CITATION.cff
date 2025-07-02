@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this library, please cite it as below."
+type: software
+authors:
+  - family-names: "Radar Perception Library"
+    given-names: "Contributors"
+title: "Radar Perception Library: A Comprehensive Collection of Radar Processing Tools"
+version: "1.0.0"
+date-released: "2025-07-02"
+url: "https://github.com/your-username/radar-perception-library"
+repository-code: "https://github.com/your-username/radar-perception-library"
+license: MIT
+keywords:
+  - "radar"
+  - "perception"
+  - "autonomous driving"
+  - "signal processing"
+  - "sensor fusion"
+  - "object detection"
+  - "tracking"
+  - "SLAM"

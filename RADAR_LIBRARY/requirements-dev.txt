@@ -1,0 +1,28 @@
+# Development dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-xdist>=3.0.0
+black>=22.0.0
+flake8>=5.0.0
+mypy>=1.0.0
+isort>=5.10.0
+pre-commit>=2.20.0
+
+# Documentation
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0
+nbsphinx>=0.8.0
+sphinx-autodoc-typehints>=1.19.0
+
+# Jupyter notebooks
+jupyter>=1.0.0
+jupyterlab>=3.4.0
+ipykernel>=6.15.0
+
+# Benchmarking
+pytest-benchmark>=4.0.0
+memory-profiler>=0.60.0
+
+# Code quality
+coverage>=6.4.0
+codecov>=2.1.0
