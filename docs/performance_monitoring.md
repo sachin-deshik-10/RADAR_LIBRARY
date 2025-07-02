@@ -75,7 +75,7 @@ graph TD
 
 ```mermaid
 mindmap
-  root((Trend Analysis))
+  root((Root))
     Research Trends
       Paper Publication Rate
       Keyword Frequency

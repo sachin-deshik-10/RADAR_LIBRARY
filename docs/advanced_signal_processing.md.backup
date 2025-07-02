@@ -735,12 +735,12 @@ def benchmark_algorithms():
 ```mermaid
 flowchart TD
     subgraph "Advanced Radar Signal Processing Pipeline"
-        A[Raw ADC Data Time Domain] --> B[Preprocessing Calibration & Windowing]
+        A[Raw ADC Data<br/>Time Domain] --> B[Preprocessing<br/>Calibration & Windowing]
         
         subgraph "Frequency Domain Processing"
-            C[Range FFT First Dimension]
-            D[Doppler FFT Second Dimension]
-            E[Angle Processing Beamforming/MUSIC]
+            C[Range FFT<br/>First Dimension]
+            D[Doppler FFT<br/>Second Dimension]
+            E[Angle Processing<br/>Beamforming/MUSIC]
         end
         
         B --> C
@@ -748,9 +748,9 @@ flowchart TD
         D --> E
         
         subgraph "Adaptive Processing"
-            F[STAP Space-Time Adaptive]
-            G[Cognitive Processing Learning-based]
-            H[Interference Mitigation Adaptive Filtering]
+            F[STAP<br/>Space-Time Adaptive]
+            G[Cognitive Processing<br/>Learning-based]
+            H[Interference Mitigation<br/>Adaptive Filtering]
         end
         
         E --> F
@@ -758,17 +758,17 @@ flowchart TD
         G --> H
         
         subgraph "Advanced Techniques"
-            I[Compressed Sensing Sparse Reconstruction]
-            J[Super-Resolution MUSIC/ESPRIT]
-            K[ML Enhancement Neural Networks]
+            I[Compressed Sensing<br/>Sparse Reconstruction]
+            J[Super-Resolution<br/>MUSIC/ESPRIT]
+            K[ML Enhancement<br/>Neural Networks]
         end
         
         H --> I
         I --> J
         J --> K
         
-        K --> L[Detection & Estimation CFAR + ML]
-        L --> M[Output Range/Doppler/Angle/Amplitude]
+        K --> L[Detection & Estimation<br/>CFAR + ML]
+        L --> M[Output<br/>Range/Doppler/Angle/Amplitude]
     end
 ```
 
@@ -778,13 +778,13 @@ flowchart TD
 graph TB
     subgraph "MIMO Radar Signal Processing"
         subgraph "Transmitter Array"
-            A1[TX Antenna 1 Orthogonal Waveform 1]
-            A2[TX Antenna 2 Orthogonal Waveform 2]
-            A3[TX Antenna N Orthogonal Waveform N]
+            A1[TX Antenna 1<br/>Orthogonal Waveform 1]
+            A2[TX Antenna 2<br/>Orthogonal Waveform 2]
+            A3[TX Antenna N<br/>Orthogonal Waveform N]
         end
         
         subgraph "Channel Matrix"
-            B[Propagation Channel Multipath + Targets]
+            B[Propagation Channel<br/>Multipath + Targets]
         end
         
         A1 --> B
@@ -802,9 +802,9 @@ graph TB
         B --> C3
         
         subgraph "Digital Signal Processing"
-            D[Matched Filtering Waveform Separation]
-            E[Virtual Array Formation NM Elements]
-            F[DOA Estimation 2D Angle Estimation]
+            D[Matched Filtering<br/>Waveform Separation]
+            E[Virtual Array Formation<br/>N×M Elements]
+            F[DOA Estimation<br/>2D Angle Estimation]
         end
         
         C1 --> D
@@ -814,7 +814,7 @@ graph TB
         D --> E
         E --> F
         
-        F --> G[High-Resolution Angle Estimation]
+        F --> G[High-Resolution<br/>Angle Estimation]
     end
 ```
 
@@ -823,17 +823,17 @@ graph TB
 ```mermaid
 graph LR
     subgraph "Cognitive Radar System"
-        A[Environment Sensing Target + Clutter] --> B[Performance Assessment SINR/Detection Rate]
-        B --> C[Learning Algorithm Reinforcement Learning]
-        C --> D[Waveform Optimization Adaptive Design]
-        D --> E[Transmit Parameters Frequency/Power/Beam]
-        E --> F[Radar Transmission Optimized Waveform]
+        A[Environment Sensing<br/>Target + Clutter] --> B[Performance Assessment<br/>SINR/Detection Rate]
+        B --> C[Learning Algorithm<br/>Reinforcement Learning]
+        C --> D[Waveform Optimization<br/>Adaptive Design]
+        D --> E[Transmit Parameters<br/>Frequency/Power/Beam]
+        E --> F[Radar Transmission<br/>Optimized Waveform]
         F --> A
         
         subgraph "AI Decision Engine"
-            G[Neural Network Policy Learning]
-            H[Experience Replay Memory Buffer]
-            I[Reward Function Performance Metric]
+            G[Neural Network<br/>Policy Learning]
+            H[Experience Replay<br/>Memory Buffer]
+            I[Reward Function<br/>Performance Metric]
         end
         
         C --> G
@@ -848,20 +848,20 @@ graph LR
 ```mermaid
 flowchart LR
     subgraph "Compressed Sensing for Radar"
-        A[Full Nyquist Sampling High Rate ADC] --> B[Sparse Signal Model Range-Doppler Domain]
+        A[Full Nyquist Sampling<br/>High Rate ADC] --> B[Sparse Signal Model<br/>Range-Doppler Domain]
         
-        C[Compressed Sampling Sub-Nyquist Rate] --> D[Measurement Matrix Random/Structured]
+        C[Compressed Sampling<br/>Sub-Nyquist Rate] --> D[Measurement Matrix<br/>Random/Structured]
         
-        B --> E[Sparsity Transform DCT/Wavelets/Learned]
-        D --> F[Optimization Problem L1 Minimization]
+        B --> E[Sparsity Transform<br/>DCT/Wavelets/Learned]
+        D --> F[Optimization Problem<br/>L1 Minimization]
         
-        E --> G[Sparse Representation Few Non-zero Elements]
-        F --> H[Reconstruction Algorithm OMP/LASSO/Deep Learning]
+        E --> G[Sparse Representation<br/>Few Non-zero Elements]
+        F --> H[Reconstruction Algorithm<br/>OMP/LASSO/Deep Learning]
         
-        G --> I[Signal Recovery Original Domain]
+        G --> I[Signal Recovery<br/>Original Domain]
         H --> I
         
-        I --> J[Performance Analysis SNR/Resolution Trade-offs]
+        I --> J[Performance Analysis<br/>SNR/Resolution Trade-offs]
     end
 ```
 
@@ -870,30 +870,30 @@ flowchart LR
 ```mermaid
 graph TD
     subgraph "Radar Interference Mitigation"
-        A[Interference Detection Statistical Analysis] --> B{Interference Type}
+        A[Interference Detection<br/>Statistical Analysis] --> B{Interference Type}
         
-        B -->|Automotive Radar| C[ARI Mitigation Frequency Diversity]
-        B -->|Communication| D[Notch Filtering Adaptive Algorithms]
-        B -->|Jamming| E[Anti-Jamming Spread Spectrum]
-        B -->|Multipath| F[Space-Time Processing STAP Techniques]
+        B -->|Automotive Radar| C[ARI Mitigation<br/>Frequency Diversity]
+        B -->|Communication| D[Notch Filtering<br/>Adaptive Algorithms]
+        B -->|Jamming| E[Anti-Jamming<br/>Spread Spectrum]
+        B -->|Multipath| F[Space-Time Processing<br/>STAP Techniques]
         
-        C --> G[Signal Recovery Interpolation]
+        C --> G[Signal Recovery<br/>Interpolation]
         D --> G
         E --> G
         F --> G
         
-        G --> H[Performance Validation SINR Improvement]
+        G --> H[Performance Validation<br/>SINR Improvement]
         
         subgraph "Machine Learning Approaches"
-            I[Deep Denoising Autoencoder]
-            J[GAN-based Recovery Adversarial Training]
-            K[Reinforcement Learning Adaptive Strategies]
+            I[Deep Denoising<br/>Autoencoder]
+            J[GAN-based Recovery<br/>Adversarial Training]
+            K[Reinforcement Learning<br/>Adaptive Strategies]
         end
         
         H --> I
         I --> J
         J --> K
-        K --> L[AI-Enhanced Mitigation Real-time Adaptation]
+        K --> L[AI-Enhanced Mitigation<br/>Real-time Adaptation]
     end
 ```
 
@@ -902,7 +902,8 @@ graph TD
 ### Performance Comparison Chart
 
 ```mermaid
-pie title "Signal Processing Performance Evolution"
+xychart-beta
+    title "Signal Processing Performance Evolution"
     x-axis [Traditional, Adaptive, ML-Enhanced, Cognitive, Quantum]
     y-axis "Performance Gain (dB)" 0 --> 25
     bar [0, 6.2, 12.8, 18.5, 24.3]
@@ -923,8 +924,8 @@ pie title Computational Complexity Distribution
 
 ```mermaid
 timeline
-    title Timeline
     title Advanced Signal Processing Research (2023-2025)
+    
     section 2023 Publications
         Q1 : "Deep STAP for Clutter Suppression"
            : Thompson et al. - IEEE Trans. AES
@@ -976,10 +977,10 @@ timeline
 
 ```mermaid
 graph LR
-    A[Radar Data] --> B[Attention Module Spatial-Temporal]
-    B --> C[Covariance Estimation Neural Network]
-    C --> D[STAP Weights Computation]
-    D --> E[Clutter Suppression Adaptive Filter]
+    A[Radar Data] --> B[Attention Module<br/>Spatial-Temporal]
+    B --> C[Covariance Estimation<br/>Neural Network]
+    C --> D[STAP Weights<br/>Computation]
+    D --> E[Clutter Suppression<br/>Adaptive Filter]
 ```
 
 #### 2. "Quantum Compressed Sensing for Radar Applications" (2024)
@@ -997,10 +998,10 @@ graph LR
 
 ```mermaid
 graph TB
-    A[Classical Radar Signal] --> B[Quantum State Encoding Amplitude Encoding]
-    B --> C[Quantum Compressed Sensing Measurement Operators]
-    C --> D[Quantum Algorithm Variational Quantum Eigensolver]
-    D --> E[Classical Reconstruction Sparse Signal Recovery]
+    A[Classical Radar Signal] --> B[Quantum State Encoding<br/>Amplitude Encoding]
+    B --> C[Quantum Compressed Sensing<br/>Measurement Operators]
+    C --> D[Quantum Algorithm<br/>Variational Quantum Eigensolver]
+    D --> E[Classical Reconstruction<br/>Sparse Signal Recovery]
 ```
 
 #### 3. "Federated Learning for Distributed Radar Networks" (2024)
@@ -1019,11 +1020,11 @@ graph TB
 ```mermaid
 graph TB
     subgraph "Federated Radar Network"
-        A[Radar Node 1 Local Model Training]
-        B[Radar Node 2 Local Model Training]
-        C[Radar Node N Local Model Training]
+        A[Radar Node 1<br/>Local Model Training]
+        B[Radar Node 2<br/>Local Model Training]
+        C[Radar Node N<br/>Local Model Training]
         
-        D[Parameter Server Global Aggregation]
+        D[Parameter Server<br/>Global Aggregation]
         
         A -.->|Encrypted Gradients| D
         B -.->|Encrypted Gradients| D
@@ -1051,23 +1052,24 @@ graph TB
 ```mermaid
 graph LR
     subgraph "Foundation Model Training"
-        A[Massive Radar Dataset 100M+ Frames] --> B[Self-Supervised Learning Masked Radar Modeling]
-        B --> C[Large Transformer Model 1B+ Parameters]
-        C --> D[Foundation Model Universal Radar Understanding]
+        A[Massive Radar Dataset<br/>100M+ Frames] --> B[Self-Supervised Learning<br/>Masked Radar Modeling]
+        B --> C[Large Transformer Model<br/>1B+ Parameters]
+        C --> D[Foundation Model<br/>Universal Radar Understanding]
     end
     
     subgraph "Downstream Applications"
-        D --> E[Object Detection Fine-tuning]
-        D --> F[Signal Enhancement Few-shot Learning]
-        D --> G[Anomaly Detection Zero-shot]
-        D --> H[Parameter Optimization Transfer Learning]
+        D --> E[Object Detection<br/>Fine-tuning]
+        D --> F[Signal Enhancement<br/>Few-shot Learning]
+        D --> G[Anomaly Detection<br/>Zero-shot]
+        D --> H[Parameter Optimization<br/>Transfer Learning]
     end
 ```
 
 ### Performance Statistics from Latest Research
 
 ```mermaid
-pie title "Performance Improvements from 2024-2025 Research"
+xychart-beta
+    title "Performance Improvements from 2024-2025 Research"
     x-axis [Baseline, Neural-STAP, Quantum-CS, Federated, Foundation]
     y-axis "Improvement Factor" 1 --> 10
     bar [1, 3.2, 8.7, 2.8, 6.5]
@@ -1076,7 +1078,8 @@ pie title "Performance Improvements from 2024-2025 Research"
 ### Computational Efficiency Gains
 
 ```mermaid
-pie title "Computational Efficiency Improvements"
+xychart-beta
+    title "Computational Efficiency Improvements"
     x-axis [Traditional, GPU-Accelerated, Quantum-Enhanced, Neuromorphic]
     y-axis "Speedup Factor" 1 --> 1000
     line [1, 50, 500, 200]

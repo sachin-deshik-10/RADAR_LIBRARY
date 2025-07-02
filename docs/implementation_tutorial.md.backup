@@ -1021,7 +1021,7 @@ graph LR
 
 ```mermaid
 mindmap
-  root((Root))
+  root((Deployment))
     Cloud Platforms
       AWS SageMaker
       Google Cloud AI
@@ -1176,8 +1176,8 @@ class QuantumRadarClassifier:
 
 ```mermaid
 timeline
-    title timeline
     title Implementation Evolution
+    
     2025 : Advanced Edge AI
          : Federated Learning
          : Digital Twins

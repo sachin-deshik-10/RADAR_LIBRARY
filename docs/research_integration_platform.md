@@ -77,7 +77,7 @@ graph TD
 
 ```mermaid
 mindmap
-  root((Research Network))
+  root((Root))
     Author Relationships
       Collaboration Patterns
       Institution Networks
@@ -163,6 +163,7 @@ graph TD
 
 ```mermaid
 timeline
+    title timeline
     title Quantum Radar Evolution
     2025 : Quantum sensing demonstrations
          : Basic quantum algorithms

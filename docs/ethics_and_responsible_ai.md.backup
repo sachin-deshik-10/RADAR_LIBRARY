@@ -4,7 +4,7 @@
 
 ```mermaid
 mindmap
-  root((Root))
+  root((Ethical AI in Radar))
     Privacy
       Data Protection
       Anonymization
@@ -761,10 +761,10 @@ graph TB
     end
     
     subgraph "Intersectional Groups"
-        D --> E[Age  Gender]
-        D --> F[Age  Ethnicity]
-        D --> G[Gender  Ethnicity]
-        D --> H[Age  Gender  Ethnicity]
+        D --> E[Age × Gender]
+        D --> F[Age × Ethnicity]
+        D --> G[Gender × Ethnicity]
+        D --> H[Age × Gender × Ethnicity]
     end
     
     subgraph "Fairness Assessment"
@@ -1618,9 +1618,9 @@ class RegulatoryComplianceChecker:
 
 ```mermaid
 timeline
-    title timeline
     title Emerging Ethical Challenges Timeline
-    2025 : AI Autonomy
+    
+    2025      : AI Autonomy
               : Superintelligent radar systems
               : Human-AI collaboration ethics
               : Autonomous decision boundaries
@@ -1772,7 +1772,7 @@ flowchart TD
 
 ```mermaid
 mindmap
-  root((Root))
+  root((Stakeholder Impact Analysis))
     Primary Users
       End Users
         Driver Experience

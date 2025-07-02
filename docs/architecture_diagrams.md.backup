@@ -187,16 +187,16 @@ graph LR
 ```mermaid
 flowchart TD
     subgraph "FMCW Signal Processing Pipeline"
-        A[Raw ADC Data ] --> B[Windowing Hann/Hamming/Kaiser]
-        B --> C[Range FFT First Dimension]
-        C --> D[Range Doppler Map 2D Complex Matrix]
-        D --> E[Doppler FFT Second Dimension]
-        E --> F[Doppler Shift Zero-centered]
+        A[Raw ADC Data<br/>Shape: (samples, chirps, rx)] --> B[Windowing<br/>Hann/Hamming/Kaiser]
+        B --> C[Range FFT<br/>First Dimension]
+        C --> D[Range Doppler Map<br/>2D Complex Matrix]
+        D --> E[Doppler FFT<br/>Second Dimension]
+        E --> F[Doppler Shift<br/>Zero-centered]
         
         subgraph "MIMO Processing"
-            G[Virtual Array Formation]
-            H[Angle FFT Beamforming]
-            I[3D Tensor Range-Doppler-Angle]
+            G[Virtual Array<br/>Formation]
+            H[Angle FFT<br/>Beamforming]
+            I[3D Tensor<br/>Range-Doppler-Angle]
         end
         
         F --> G
@@ -204,9 +204,9 @@ flowchart TD
         H --> I
         
         subgraph "Detection Stage"
-            J[CFAR Processing Adaptive Thresholding]
-            K[Peak Detection Local Maxima]
-            L[Clustering DBSCAN/K-means]
+            J[CFAR Processing<br/>Adaptive Thresholding]
+            K[Peak Detection<br/>Local Maxima]
+            L[Clustering<br/>DBSCAN/K-means]
         end
         
         I --> J
@@ -214,9 +214,9 @@ flowchart TD
         K --> L
         
         subgraph "Post-Processing"
-            M[Coordinate Transform Polar to Cartesian]
-            N[Velocity Estimation Doppler Analysis]
-            O[Object Classification ML-based]
+            M[Coordinate Transform<br/>Polar to Cartesian]
+            N[Velocity Estimation<br/>Doppler Analysis]
+            O[Object Classification<br/>ML-based]
         end
         
         L --> M
@@ -231,27 +231,27 @@ flowchart TD
 graph TB
     subgraph "Advanced Processing Techniques"
         subgraph "Interference Mitigation"
-            A1[Detection Statistical Analysis]
-            A2[Mitigation Interpolation/Filtering]
-            A3[Validation Performance Check]
+            A1[Detection<br/>Statistical Analysis]
+            A2[Mitigation<br/>Interpolation/Filtering]
+            A3[Validation<br/>Performance Check]
         end
         
         subgraph "Super Resolution"
-            B1[MUSIC Algorithm Eigenvalue Decomposition]
-            B2[ESPRIT Method Rotation Invariance]
-            B3[Compressed Sensing Sparse Reconstruction]
+            B1[MUSIC Algorithm<br/>Eigenvalue Decomposition]
+            B2[ESPRIT Method<br/>Rotation Invariance]
+            B3[Compressed Sensing<br/>Sparse Reconstruction]
         end
         
         subgraph "Adaptive Processing"
-            C1[Environment Sensing Context Awareness]
-            C2[Parameter Adaptation Dynamic Tuning]
-            C3[Performance Optimization Real-time Adjustment]
+            C1[Environment Sensing<br/>Context Awareness]
+            C2[Parameter Adaptation<br/>Dynamic Tuning]
+            C3[Performance Optimization<br/>Real-time Adjustment]
         end
         
         subgraph "Cognitive Radar"
-            D1[Learning Module Experience Accumulation]
-            D2[Decision Engine Intelligent Control]
-            D3[Waveform Adaptation Optimal Design]
+            D1[Learning Module<br/>Experience Accumulation]
+            D2[Decision Engine<br/>Intelligent Control]
+            D3[Waveform Adaptation<br/>Optimal Design]
         end
         
         A1 --> A2 --> A3
@@ -268,35 +268,26 @@ graph TB
 ```mermaid
 graph TD
     subgraph "3D CNN Architecture for Range-Doppler-Angle Processing"
-        A[Input Tensor 256x128x64 Range-Doppler-Angle] --> B[3D Conv Layer 1 32 filters, 3x3x3]
+        A[Input Tensor<br/>256×128×64<br/>Range×Doppler×Angle] --> B[3D Conv Layer 1<br/>32 filters, 3×3×3]
         B --> C[Batch Norm + ReLU]
-        C --> D[3D Max Pool 2x2x2]
+        C --> D[3D Max Pool<br/>2×2×2]
         
-        D --> E[3D Conv Layer 2 64 filters, 3x3x3]
+        D --> E[3D Conv Layer 2<br/>64 filters, 3×3×3]
         E --> F[Batch Norm + ReLU]
-        F --> G[3D Max Pool 2x2x2]
+        F --> G[3D Max Pool<br/>2×2×2]
         
-        G --> H[3D Conv Layer 3 128 filters, 3x3x3]
+        G --> H[3D Conv Layer 3<br/>128 filters, 3×3×3]
         H --> I[Batch Norm + ReLU]
         I --> J[Global Average Pool]
         
-        J --> K[Flatten Feature Vector]
-        K --> L[Dense Layer 256 units]
+        J --> K[Flatten<br/>Feature Vector]
+        K --> L[Dense Layer<br/>256 units]
         L --> M[Dropout 0.5]
-        M --> N[Output Layer Classification/Regression]
-    end
-    
-    subgraph "Attention Mechanism"
-        O[Spatial Attention Channel-wise weights]
-        P[Temporal Attention Sequence weights]
-        Q[Feature Attention Layer weights]
-    end
-    
-    L --> O
-    O --> P
-    P --> Q
-    Q --> M
-            P[Temporal Attention Sequence modeling]
+        M --> N[Output Layer<br/>Classification/Regression]
+        
+        subgraph "Attention Mechanism"
+            O[Spatial Attention<br/>Channel-wise weights]
+            P[Temporal Attention<br/>Sequence modeling]
         end
         
         I --> O
@@ -310,30 +301,30 @@ graph TD
 ```mermaid
 graph TB
     subgraph "Radar Transformer Architecture"
-        A[Radar Frame Sequence THWC] --> B[Patch Embedding Linear Projection]
-        B --> C[Positional Encoding Spatial + Temporal]
+        A[Radar Frame Sequence<br/>T×H×W×C] --> B[Patch Embedding<br/>Linear Projection]
+        B --> C[Positional Encoding<br/>Spatial + Temporal]
         C --> D[Layer Norm]
         
         subgraph "Multi-Head Attention Block"
-            E[Query, Key, Value Linear Transformations]
-            F[Scaled Dot-Product Attention]
-            G[Multi-Head Concat Attention Heads]
-            H[Feed Forward MLP Layer]
+            E[Query, Key, Value<br/>Linear Transformations]
+            F[Scaled Dot-Product<br/>Attention]
+            G[Multi-Head Concat<br/>Attention Heads]
+            H[Feed Forward<br/>MLP Layer]
         end
         
         D --> E
         E --> F
         F --> G
         G --> H
-        H --> I[Add & Norm Residual Connection]
+        H --> I[Add & Norm<br/>Residual Connection]
         
         I --> J{More Layers?}
         J -->|Yes| E
-        J -->|No| K[Classification Head Object Detection]
+        J -->|No| K[Classification Head<br/>Object Detection]
         
         subgraph "Temporal Modeling"
-            L[Sequence Attention Time Dependencies]
-            M[Motion Prediction Future States]
+            L[Sequence Attention<br/>Time Dependencies]
+            M[Motion Prediction<br/>Future States]
         end
         
         K --> L
@@ -346,7 +337,7 @@ graph TB
 ```mermaid
 graph LR
     subgraph "GNN Architecture for Radar Point Clouds"
-        A[Radar Detections Point Cloud] --> B[Graph Construction K-NN/Radius]
+        A[Radar Detections<br/>Point Cloud] --> B[Graph Construction<br/>K-NN/Radius]
         
         subgraph "Node Features"
             C[Position (x,y,z)]
@@ -361,9 +352,9 @@ graph LR
         B --> F
         
         subgraph "GNN Layers"
-            G[Message Passing Node Communication]
-            H[Feature Aggregation Neighbor Information]
-            I[Node Update Feature Transformation]
+            G[Message Passing<br/>Node Communication]
+            H[Feature Aggregation<br/>Neighbor Information]
+            I[Node Update<br/>Feature Transformation]
         end
         
         C --> G
@@ -375,9 +366,9 @@ graph LR
         H --> I
         I --> J{More Layers?}
         J -->|Yes| G
-        J -->|No| K[Graph Pooling Global Features]
+        J -->|No| K[Graph Pooling<br/>Global Features]
         
-        K --> L[Object Classification Track Prediction]
+        K --> L[Object Classification<br/>Track Prediction]
     end
 ```
 
@@ -386,30 +377,30 @@ graph LR
 ```mermaid
 graph TB
     subgraph "Neuromorphic Radar Processing"
-        A[Spike-based Input Event-driven Data] --> B[Spiking Neural Network Leaky Integrate-Fire]
+        A[Spike-based Input<br/>Event-driven Data] --> B[Spiking Neural Network<br/>Leaky Integrate-Fire]
         
         subgraph "Temporal Processing"
-            C[Spike Timing Dependent Plasticity]
-            D[Membrane Potential Dynamics]
-            E[Refractory Period Neural Reset]
+            C[Spike Timing<br/>Dependent Plasticity]
+            D[Membrane Potential<br/>Dynamics]
+            E[Refractory Period<br/>Neural Reset]
         end
         
         B --> C
         C --> D
         D --> E
-        E --> F[Spike Output Binary Events]
+        E --> F[Spike Output<br/>Binary Events]
         
         subgraph "Learning Mechanisms"
-            G[Unsupervised Learning Hebbian Rules]
-            H[Homeostatic Plasticity Stability Control]
-            I[Competitive Learning Winner-Take-All]
+            G[Unsupervised Learning<br/>Hebbian Rules]
+            H[Homeostatic Plasticity<br/>Stability Control]
+            I[Competitive Learning<br/>Winner-Take-All]
         end
         
         F --> G
         G --> H
         H --> I
         
-        I --> J[Real-time Processing Ultra-low Power]
+        I --> J[Real-time Processing<br/>Ultra-low Power]
     end
 ```
 
@@ -421,29 +412,29 @@ graph TB
 flowchart TD
     subgraph "Comprehensive Detection Pipeline"
         A[Range-Doppler Map] --> B{Preprocessing}
-        B --> C[Noise Reduction Gaussian Filter]
-        B --> D[Contrast Enhancement Histogram Equalization]
+        B --> C[Noise Reduction<br/>Gaussian Filter]
+        B --> D[Contrast Enhancement<br/>Histogram Equalization]
         
-        C --> E[CFAR Detection Adaptive Thresholding]
+        C --> E[CFAR Detection<br/>Adaptive Thresholding]
         D --> E
         
-        E --> F[Peak Detection Local Maxima]
-        F --> G[False Alarm Filtering Size/Shape Constraints]
+        E --> F[Peak Detection<br/>Local Maxima]
+        F --> G[False Alarm Filtering<br/>Size/Shape Constraints]
         
         G --> H{Clustering}
-        H --> I[DBSCAN Density-based]
-        H --> J[K-means Centroid-based]
-        H --> K[Hierarchical Linkage-based]
+        H --> I[DBSCAN<br/>Density-based]
+        H --> J[K-means<br/>Centroid-based]
+        H --> K[Hierarchical<br/>Linkage-based]
         
-        I --> L[Cluster Validation Silhouette Analysis]
+        I --> L[Cluster Validation<br/>Silhouette Analysis]
         J --> L
         K --> L
         
-        L --> M[Feature Extraction Statistical Descriptors]
-        M --> N[Object Classification ML Models]
+        L --> M[Feature Extraction<br/>Statistical Descriptors]
+        M --> N[Object Classification<br/>ML Models]
         
-        N --> O[Confidence Scoring Uncertainty Estimation]
-        O --> P[Output Detections Structured Format]
+        N --> O[Confidence Scoring<br/>Uncertainty Estimation]
+        O --> P[Output Detections<br/>Structured Format]
     end
 ```
 
@@ -453,27 +444,27 @@ flowchart TD
 graph LR
     subgraph "Machine Learning Enhanced Detection"
         subgraph "Training Phase"
-            A[Labeled Dataset Ground Truth]
-            B[Feature Engineering Domain Knowledge]
-            C[Model Training Cross-validation]
-            D[Hyperparameter Tuning Grid/Random Search]
+            A[Labeled Dataset<br/>Ground Truth]
+            B[Feature Engineering<br/>Domain Knowledge]
+            C[Model Training<br/>Cross-validation]
+            D[Hyperparameter Tuning<br/>Grid/Random Search]
         end
         
         subgraph "Inference Phase"
-            E[Real-time Input Radar Data]
-            F[Preprocessing Normalization]
-            G[Feature Extraction Automated]
-            H[Model Prediction Classification/Regression]
-            I[Post-processing Confidence Filtering]
+            E[Real-time Input<br/>Radar Data]
+            F[Preprocessing<br/>Normalization]
+            G[Feature Extraction<br/>Automated]
+            H[Model Prediction<br/>Classification/Regression]
+            I[Post-processing<br/>Confidence Filtering]
         end
         
         A --> B --> C --> D
         E --> F --> G --> H --> I
         
         subgraph "Continuous Learning"
-            J[Performance Monitoring Accuracy Tracking]
-            K[Data Collection New Samples]
-            L[Model Retraining Incremental Updates]
+            J[Performance Monitoring<br/>Accuracy Tracking]
+            K[Data Collection<br/>New Samples]
+            L[Model Retraining<br/>Incremental Updates]
         end
         
         I --> J --> K --> L --> C
@@ -487,12 +478,12 @@ graph LR
 ```mermaid
 graph TB
     subgraph "Multi-Target Tracking System"
-        A[New Detections Current Frame] --> B[Data Association Hungarian Algorithm]
+        A[New Detections<br/>Current Frame] --> B[Data Association<br/>Hungarian Algorithm]
         
         subgraph "Track Management"
-            C[Track Initialization New Targets]
-            D[Track Update Existing Targets]
-            E[Track Deletion Lost Targets]
+            C[Track Initialization<br/>New Targets]
+            D[Track Update<br/>Existing Targets]
+            E[Track Deletion<br/>Lost Targets]
         end
         
         B --> C
@@ -500,10 +491,10 @@ graph TB
         B --> E
         
         subgraph "State Estimation"
-            F[Kalman Filter Linear Motion]
-            G[Extended Kalman Filter Nonlinear Motion]
-            H[Particle Filter Complex Dynamics]
-            I[Unscented Kalman Filter Nonlinear Transforms]
+            F[Kalman Filter<br/>Linear Motion]
+            G[Extended Kalman Filter<br/>Nonlinear Motion]
+            H[Particle Filter<br/>Complex Dynamics]
+            I[Unscented Kalman Filter<br/>Nonlinear Transforms]
         end
         
         D --> F
@@ -512,10 +503,10 @@ graph TB
         D --> I
         
         subgraph "Motion Models"
-            J[Constant Velocity CV Model]
-            K[Constant Acceleration CA Model]
-            L[Coordinated Turn CT Model]
-            M[Interacting Multiple Model IMM]
+            J[Constant Velocity<br/>CV Model]
+            K[Constant Acceleration<br/>CA Model]
+            L[Coordinated Turn<br/>CT Model]
+            M[Interacting Multiple Model<br/>IMM]
         end
         
         F --> J
@@ -523,7 +514,7 @@ graph TB
         H --> L
         I --> M
         
-        J --> N[Track Output Position/Velocity]
+        J --> N[Track Output<br/>Position/Velocity]
         K --> N
         L --> N
         M --> N
@@ -536,28 +527,28 @@ graph TB
 flowchart LR
     subgraph "Advanced Tracking Techniques"
         subgraph "Probabilistic Methods"
-            A1[Joint Probabilistic Data Association]
-            A2[Multiple Hypothesis Tracking]
-            A3[Probability Hypothesis Density Filter]
+            A1[Joint Probabilistic<br/>Data Association]
+            A2[Multiple Hypothesis<br/>Tracking]
+            A3[Probability Hypothesis<br/>Density Filter]
         end
         
         subgraph "Deep Learning Tracking"
-            B1[Recurrent Neural Networks]
-            B2[LSTM/GRU Sequence Modeling]
-            B3[Attention Mechanisms Focus on Relevant Features]
+            B1[Recurrent Neural<br/>Networks]
+            B2[LSTM/GRU<br/>Sequence Modeling]
+            B3[Attention Mechanisms<br/>Focus on Relevant Features]
         end
         
         subgraph "Hybrid Approaches"
-            C1[Physics-Informed Neural Networks]
-            C2[Differentiable Kalman Filters]
-            C3[Graph-based Tracking]
+            C1[Physics-Informed<br/>Neural Networks]
+            C2[Differentiable<br/>Kalman Filters]
+            C3[Graph-based<br/>Tracking]
         end
         
         A1 --> A2 --> A3
         B1 --> B2 --> B3
         C1 --> C2 --> C3
         
-        A3 --> D[Unified Tracking Framework]
+        A3 --> D[Unified Tracking<br/>Framework]
         B3 --> D
         C3 --> D
     end
@@ -571,19 +562,19 @@ flowchart LR
 graph TB
     subgraph "Multi-Sensor Fusion Framework"
         subgraph "Sensor Inputs"
-            A1[Radar Data Range/Doppler/Angle]
-            A2[Camera Data RGB Images]
-            A3[LiDAR Data 3D Point Cloud]
-            A4[IMU Data Acceleration/Gyro]
-            A5[GPS Data Global Position]
+            A1[Radar Data<br/>Range/Doppler/Angle]
+            A2[Camera Data<br/>RGB Images]
+            A3[LiDAR Data<br/>3D Point Cloud]
+            A4[IMU Data<br/>Acceleration/Gyro]
+            A5[GPS Data<br/>Global Position]
         end
         
         subgraph "Preprocessing"
-            B1[Radar Processing CFAR Detection]
-            B2[Computer Vision Object Detection]
-            B3[Point Cloud Segmentation]
-            B4[Motion Estimation Velocity/Orientation]
-            B5[Localization Global Coordinates]
+            B1[Radar Processing<br/>CFAR Detection]
+            B2[Computer Vision<br/>Object Detection]
+            B3[Point Cloud<br/>Segmentation]
+            B4[Motion Estimation<br/>Velocity/Orientation]
+            B5[Localization<br/>Global Coordinates]
         end
         
         A1 --> B1
@@ -593,9 +584,9 @@ graph TB
         A5 --> B5
         
         subgraph "Coordinate Transformation"
-            C1[Spatial Alignment Homogeneous Transforms]
-            C2[Temporal Alignment Synchronization]
-            C3[Calibration Extrinsic Parameters]
+            C1[Spatial Alignment<br/>Homogeneous Transforms]
+            C2[Temporal Alignment<br/>Synchronization]
+            C3[Calibration<br/>Extrinsic Parameters]
         end
         
         B1 --> C1
@@ -605,10 +596,10 @@ graph TB
         B5 --> C3
         
         subgraph "Fusion Algorithms"
-            D1[Kalman Fusion Linear Combination]
-            D2[Particle Fusion Nonlinear Estimation]
-            D3[Dempster-Shafer Evidence Theory]
-            D4[Bayesian Networks Probabilistic Inference]
+            D1[Kalman Fusion<br/>Linear Combination]
+            D2[Particle Fusion<br/>Nonlinear Estimation]
+            D3[Dempster-Shafer<br/>Evidence Theory]
+            D4[Bayesian Networks<br/>Probabilistic Inference]
         end
         
         C1 --> D1
@@ -616,7 +607,7 @@ graph TB
         C3 --> D3
         C1 --> D4
         
-        D1 --> E[Fused Object List Enhanced Accuracy]
+        D1 --> E[Fused Object List<br/>Enhanced Accuracy]
         D2 --> E
         D3 --> E
         D4 --> E
@@ -629,16 +620,16 @@ graph TB
 graph LR
     subgraph "Uncertainty Quantification in Fusion"
         subgraph "Uncertainty Sources"
-            A1[Sensor Noise Measurement Errors]
-            A2[Model Uncertainty Parameter Estimation]
-            A3[Environmental Weather/Interference]
-            A4[Temporal Synchronization Errors]
+            A1[Sensor Noise<br/>Measurement Errors]
+            A2[Model Uncertainty<br/>Parameter Estimation]
+            A3[Environmental<br/>Weather/Interference]
+            A4[Temporal<br/>Synchronization Errors]
         end
         
         subgraph "Uncertainty Modeling"
-            B1[Aleatoric Data Uncertainty]
-            B2[Epistemic Model Uncertainty]
-            B3[Distributional Statistical Models]
+            B1[Aleatoric<br/>Data Uncertainty]
+            B2[Epistemic<br/>Model Uncertainty]
+            B3[Distributional<br/>Statistical Models]
         end
         
         A1 --> B1
@@ -647,16 +638,16 @@ graph LR
         A4 --> B1
         
         subgraph "Propagation Methods"
-            C1[Monte Carlo Sampling]
-            C2[Unscented Transform Sigma Points]
-            C3[Ensemble Methods Multiple Models]
+            C1[Monte Carlo<br/>Sampling]
+            C2[Unscented Transform<br/>Sigma Points]
+            C3[Ensemble Methods<br/>Multiple Models]
         end
         
         B1 --> C1
         B2 --> C2
         B3 --> C3
         
-        C1 --> D[Uncertainty Bounds Confidence Intervals]
+        C1 --> D[Uncertainty Bounds<br/>Confidence Intervals]
         C2 --> D
         C3 --> D
     end
@@ -667,7 +658,8 @@ graph LR
 ### Processing Performance Metrics
 
 ```mermaid
-pie title "Radar Processing Performance Comparison"
+xychart-beta
+    title "Radar Processing Performance Comparison"
     x-axis [Traditional, CNN, Transformer, GNN, Neuromorphic]
     y-axis "Processing Time (ms)" 0 --> 100
     bar [45.2, 28.7, 35.1, 22.3, 8.9]
@@ -676,9 +668,10 @@ pie title "Radar Processing Performance Comparison"
 ### Accuracy Comparison Across Methods
 
 ```mermaid
-pie title "Detection Accuracy by Method"
+xychart-beta
+    title "Detection Accuracy by Method"
     x-axis [CFAR, ML-CFAR, 3D-CNN, Transformer, Fusion]
-    y-axis "Accuracy ()" 70 --> 100
+    y-axis "Accuracy (%)" 70 --> 100
     line [78.5, 85.2, 91.7, 94.3, 97.1]
 ```
 
@@ -724,8 +717,8 @@ gitgraph:
 
 ```mermaid
 timeline
-    title Timeline
     title Latest Research Integration (2023-2025)
+    
     section 2023 Papers
         Q1 : "4D Radar Object Detection" - Zhang et al.
            : "Transformer-based Radar Perception" - Li et al.
@@ -763,7 +756,8 @@ timeline
 ### Citation Impact Analysis
 
 ```mermaid
-pie title "Research Impact by Category (Citations per Year)"
+xychart-beta
+    title "Research Impact by Category (Citations per Year)"
     x-axis [2020, 2021, 2022, 2023, 2024, 2025]
     y-axis "Citations" 0 --> 1000
     line [120, 185, 340, 620, 890, 1200]
@@ -861,11 +855,11 @@ graph TD
 ```mermaid
 graph TB
     subgraph "Federated Radar Network"
-        A[Radar Node 1 Local Training]
-        B[Radar Node 2 Local Training]
-        C[Radar Node N Local Training]
+        A[Radar Node 1<br/>Local Training]
+        B[Radar Node 2<br/>Local Training]
+        C[Radar Node N<br/>Local Training]
         
-        D[Central Server Model Aggregation]
+        D[Central Server<br/>Model Aggregation]
         
         A -.->|Encrypted Gradients| D
         B -.->|Encrypted Gradients| D
@@ -931,7 +925,8 @@ gantt
 ### Performance Improvements from Latest Research
 
 ```mermaid
-pie title "Performance Evolution with Research Integration"
+xychart-beta
+    title "Performance Evolution with Research Integration"
     x-axis [Baseline, Neural-Symbolic, Quantum-Enhanced, Federated, Foundation, All Combined]
     y-axis "Performance Score" 0 --> 120
     bar [75, 85, 95, 88, 105, 118]

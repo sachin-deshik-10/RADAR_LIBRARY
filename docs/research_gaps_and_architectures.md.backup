@@ -44,9 +44,9 @@ graph TD
 
 ```mermaid
 timeline
-    title timeline
     title Research Gap Resolution Timeline (2025-2030)
-    2025 : Signal Processing Gaps
+    
+    2025      : Signal Processing Gaps
               : Real-time CFAR optimization
               : Multi-target resolution algorithms
               : Interference mitigation techniques
@@ -658,7 +658,6 @@ graph TB
 ### 3.1 Research Priority Matrix
 
 ```mermaid
-%%{init: {"quadrantChart": {"chartWidth": 400, "chartHeight": 400}}}%%
 quadrantChart
     title Research Priority Matrix (Impact vs Feasibility)
     x-axis Low Feasibility --> High Feasibility
@@ -684,22 +683,11 @@ quadrantChart
 ```mermaid
 timeline
     title Technology Convergence Timeline
-    2025 : Foundation Technologies
+    
+    2025      : Foundation Technologies
               : Advanced transformers
               : Edge AI optimization
               : Multi-modal fusion
-    2026 : Integration Phase
-              : Quantum algorithms
-              : Neuromorphic computing
-              : 6G communication
-    2027 : Advanced Implementation
-              : Real-time quantum processing
-              : Biological computing
-              : Metaverse integration
-    2028+ : Revolutionary Systems
-              : Quantum-bio hybrid systems
-              : Consciousness computing
-              : Universal AI frameworks
     
     2026      : Emerging Integration
               : Quantum-classical hybrid
@@ -726,7 +714,7 @@ timeline
 
 ```mermaid
 mindmap
-  root((Root))
+  root((Critical Research Questions))
     Technical
       How to achieve real-time quantum processing?
       Can neuromorphic chips match GPU performance?
@@ -754,28 +742,24 @@ mindmap
 ### 4.1 Short-term Objectives (2025-2026)
 
 ```mermaid
-timeline
-    title Short-term Research Implementation (2025-2026)
+gantt
+    title Short-term Research Implementation
+    dateFormat YYYY-MM-DD
     
-    2025 Q1 : Signal Processing Start
-                 : Quantum CFAR Development
-                 : Temporal Graph Networks
-                 : Benchmark Development
+    section Signal Processing
+    Quantum CFAR Development    :2025-01-01, 2025-06-30
+    Multi-target Resolution     :2025-03-01, 2025-09-30
+    Real-time Optimization      :2025-06-01, 2025-12-31
     
-    2025 Q2 : Mid-year Expansion
-                 : Multi-target Resolution
-                 : Real-time Optimization
-                 : Cross-modal Transformers
+    section AI Architectures
+    Temporal Graph Networks     :2025-01-01, 2025-08-31
+    Cross-modal Transformers    :2025-04-01, 2025-10-31
+    Neuromorphic Implementation :2025-07-01, 2026-03-31
     
-    2025 Q3-Q4 : Advanced Implementation
-                    : Performance Evaluation
-                    : Neuromorphic Implementation
-                    : Real-world Testing
-    
-    2026 Q1 : Integration & Validation
-                 : System Integration
-                 : Final Testing
-                 : Performance Validation
+    section Validation
+    Benchmark Development       :2025-02-01, 2025-07-31
+    Performance Evaluation      :2025-08-01, 2026-01-31
+    Real-world Testing         :2025-10-01, 2026-04-30
 ```
 
 ### 4.2 Medium-term Goals (2026-2028)

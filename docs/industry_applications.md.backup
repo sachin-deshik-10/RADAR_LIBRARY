@@ -1138,39 +1138,39 @@ class RadarAIDeploymentFramework:
 graph TB
     subgraph "Radar Perception Industry Applications"
         subgraph "Automotive Sector"
-            A1[Autonomous Vehicles L3-L5 Automation]
-            A2[ADAS Systems Safety Features]
-            A3[Traffic Management Smart Infrastructure]
+            A1[Autonomous Vehicles<br/>L3-L5 Automation]
+            A2[ADAS Systems<br/>Safety Features]
+            A3[Traffic Management<br/>Smart Infrastructure]
         end
         
         subgraph "Aerospace & Defense"
-            B1[Air Traffic Control Surveillance Systems]
-            B2[Military Radar Target Tracking]
-            B3[Drone Detection Counter-UAS]
+            B1[Air Traffic Control<br/>Surveillance Systems]
+            B2[Military Radar<br/>Target Tracking]
+            B3[Drone Detection<br/>Counter-UAS]
         end
         
         subgraph "Healthcare & Medical"
-            C1[Vital Sign Monitoring Contactless Sensing]
-            C2[Fall Detection Elderly Care]
-            C3[Gesture Recognition Human-Computer Interface]
+            C1[Vital Sign Monitoring<br/>Contactless Sensing]
+            C2[Fall Detection<br/>Elderly Care]
+            C3[Gesture Recognition<br/>Human-Computer Interface]
         end
         
         subgraph "Smart Cities"
-            D1[Traffic Monitoring Flow Optimization]
-            D2[Crowd Management Public Safety]
-            D3[Environmental Sensing Weather Monitoring]
+            D1[Traffic Monitoring<br/>Flow Optimization]
+            D2[Crowd Management<br/>Public Safety]
+            D3[Environmental Sensing<br/>Weather Monitoring]
         end
         
         subgraph "Industrial IoT"
-            E1[Predictive Maintenance Equipment Monitoring]
-            E2[Quality Control Manufacturing]
-            E3[Asset Tracking Inventory Management]
+            E1[Predictive Maintenance<br/>Equipment Monitoring]
+            E2[Quality Control<br/>Manufacturing]
+            E3[Asset Tracking<br/>Inventory Management]
         end
         
         subgraph "Maritime & Port"
-            F1[Vessel Traffic Harbor Management]
-            F2[Collision Avoidance Navigation Safety]
-            F3[Port Security Perimeter Monitoring]
+            F1[Vessel Traffic<br/>Harbor Management]
+            F2[Collision Avoidance<br/>Navigation Safety]
+            F3[Port Security<br/>Perimeter Monitoring]
         end
     end
 ```
@@ -1180,13 +1180,13 @@ graph TB
 ```mermaid
 flowchart TD
     subgraph "Autonomous Vehicle Radar System"
-        A[Vehicle Sensors Radar Array] --> B[Edge Computing Real-time Processing]
+        A[Vehicle Sensors<br/>Radar Array] --> B[Edge Computing<br/>Real-time Processing]
         
         subgraph "Sensor Suite"
-            C[Long Range Radar 200m Detection]
-            D[Medium Range Radar 80m Coverage]
-            E[Short Range Radar 30m High Resolution]
-            F[Corner Radars Blind Spot Detection]
+            C[Long Range Radar<br/>200m Detection]
+            D[Medium Range Radar<br/>80m Coverage]
+            E[Short Range Radar<br/>30m High Resolution]
+            F[Corner Radars<br/>Blind Spot Detection]
         end
         
         A --> C
@@ -1195,10 +1195,10 @@ flowchart TD
         A --> F
         
         subgraph "Processing Pipeline"
-            G[Signal Processing FMCW Analysis]
-            H[Object Detection ML Classification]
-            I[Tracking & Fusion Multi-Sensor Integration]
-            J[Behavior Prediction Trajectory Forecasting]
+            G[Signal Processing<br/>FMCW Analysis]
+            H[Object Detection<br/>ML Classification]
+            I[Tracking & Fusion<br/>Multi-Sensor Integration]
+            J[Behavior Prediction<br/>Trajectory Forecasting]
         end
         
         B --> G
@@ -1207,9 +1207,9 @@ flowchart TD
         I --> J
         
         subgraph "Decision Making"
-            K[Path Planning Route Optimization]
-            L[Control Commands Steering/Braking]
-            M[Safety Monitoring Collision Avoidance]
+            K[Path Planning<br/>Route Optimization]
+            L[Control Commands<br/>Steering/Braking]
+            M[Safety Monitoring<br/>Collision Avoidance]
         end
         
         J --> K
@@ -1217,9 +1217,9 @@ flowchart TD
         L --> M
         
         subgraph "Cloud Connectivity"
-            N[Fleet Learning Collective Intelligence]
-            O[OTA Updates Model Improvements]
-            P[Performance Analytics KPI Monitoring]
+            N[Fleet Learning<br/>Collective Intelligence]
+            O[OTA Updates<br/>Model Improvements]
+            P[Performance Analytics<br/>KPI Monitoring]
         end
         
         M --> N
@@ -1234,15 +1234,15 @@ flowchart TD
 graph LR
     subgraph "Contactless Healthcare Monitoring"
         subgraph "Sensing Layer"
-            A[60GHz Radar High Resolution]
-            B[24GHz Radar Penetration Capability]
-            C[UWB Radar Precise Localization]
+            A[60GHz Radar<br/>High Resolution]
+            B[24GHz Radar<br/>Penetration Capability]
+            C[UWB Radar<br/>Precise Localization]
         end
         
         subgraph "Signal Processing"
-            D[Vital Sign Extraction Heart Rate/Breathing]
-            E[Motion Analysis Activity Recognition]
-            F[Sleep Monitoring REM/Deep Sleep]
+            D[Vital Sign Extraction<br/>Heart Rate/Breathing]
+            E[Motion Analysis<br/>Activity Recognition]
+            F[Sleep Monitoring<br/>REM/Deep Sleep]
         end
         
         A --> D
@@ -1250,9 +1250,9 @@ graph LR
         C --> F
         
         subgraph "AI Analysis"
-            G[Health Pattern Recognition Anomaly Detection]
-            H[Trend Analysis Long-term Monitoring]
-            I[Alert Generation Emergency Response]
+            G[Health Pattern Recognition<br/>Anomaly Detection]
+            H[Trend Analysis<br/>Long-term Monitoring]
+            I[Alert Generation<br/>Emergency Response]
         end
         
         D --> G
@@ -1260,9 +1260,9 @@ graph LR
         F --> I
         
         subgraph "Healthcare Integration"
-            J[Electronic Health Records EHR Integration]
-            K[Physician Dashboard Clinical Decision Support]
-            L[Patient App Health Insights]
+            J[Electronic Health Records<br/>EHR Integration]
+            K[Physician Dashboard<br/>Clinical Decision Support]
+            L[Patient App<br/>Health Insights]
         end
         
         G --> J
@@ -1277,16 +1277,16 @@ graph LR
 graph TB
     subgraph "Smart City Radar Network"
         subgraph "Sensing Infrastructure"
-            A[Traffic Intersections Flow Monitoring]
-            B[Highway Systems Speed Detection]
-            C[Pedestrian Crossings Safety Monitoring]
-            D[Public Spaces Crowd Management]
+            A[Traffic Intersections<br/>Flow Monitoring]
+            B[Highway Systems<br/>Speed Detection]
+            C[Pedestrian Crossings<br/>Safety Monitoring]
+            D[Public Spaces<br/>Crowd Management]
         end
         
         subgraph "Edge Computing Layer"
-            E[Local Processing Real-time Analytics]
-            F[Data Aggregation Multi-sensor Fusion]
-            G[Event Detection Anomaly Identification]
+            E[Local Processing<br/>Real-time Analytics]
+            F[Data Aggregation<br/>Multi-sensor Fusion]
+            G[Event Detection<br/>Anomaly Identification]
         end
         
         A --> E
@@ -1295,9 +1295,9 @@ graph TB
         D --> G
         
         subgraph "City Operations Center"
-            H[Traffic Management Signal Optimization]
-            I[Emergency Response Incident Detection]
-            J[Urban Planning Data-driven Decisions]
+            H[Traffic Management<br/>Signal Optimization]
+            I[Emergency Response<br/>Incident Detection]
+            J[Urban Planning<br/>Data-driven Decisions]
         end
         
         E --> H
@@ -1305,9 +1305,9 @@ graph TB
         G --> J
         
         subgraph "Citizen Services"
-            K[Mobile Apps Real-time Information]
-            L[Public Displays Traffic Updates]
-            M[Smart Navigation Route Optimization]
+            K[Mobile Apps<br/>Real-time Information]
+            L[Public Displays<br/>Traffic Updates]
+            M[Smart Navigation<br/>Route Optimization]
         end
         
         H --> K
@@ -1322,16 +1322,16 @@ graph TB
 flowchart LR
     subgraph "Industrial Radar IoT System"
         subgraph "Manufacturing Floor"
-            A[Machine Monitoring Vibration Analysis]
-            B[Quality Control Dimensional Inspection]
-            C[Safety Zones Personnel Detection]
-            D[Material Handling Conveyor Monitoring]
+            A[Machine Monitoring<br/>Vibration Analysis]
+            B[Quality Control<br/>Dimensional Inspection]
+            C[Safety Zones<br/>Personnel Detection]
+            D[Material Handling<br/>Conveyor Monitoring]
         end
         
         subgraph "Data Processing"
-            E[Edge Analytics Real-time Processing]
-            F[Predictive Models Failure Prediction]
-            G[Quality Metrics Statistical Analysis]
+            E[Edge Analytics<br/>Real-time Processing]
+            F[Predictive Models<br/>Failure Prediction]
+            G[Quality Metrics<br/>Statistical Analysis]
         end
         
         A --> E
@@ -1340,9 +1340,9 @@ flowchart LR
         D --> E
         
         subgraph "Operations Management"
-            H[Maintenance Scheduling Proactive Planning]
-            I[Production Optimization Efficiency Improvement]
-            J[Safety Compliance Regulatory Monitoring]
+            H[Maintenance Scheduling<br/>Proactive Planning]
+            I[Production Optimization<br/>Efficiency Improvement]
+            J[Safety Compliance<br/>Regulatory Monitoring]
         end
         
         E --> H
@@ -1350,9 +1350,9 @@ flowchart LR
         G --> J
         
         subgraph "Business Intelligence"
-            K[KPI Dashboards Performance Metrics]
-            L[Cost Optimization Resource Planning]
-            M[ROI Analysis Investment Decisions]
+            K[KPI Dashboards<br/>Performance Metrics]
+            L[Cost Optimization<br/>Resource Planning]
+            M[ROI Analysis<br/>Investment Decisions]
         end
         
         H --> K
@@ -1378,9 +1378,10 @@ pie title Global Radar Market by Industry (2025)
 ### ROI Comparison Across Industries
 
 ```mermaid
-pie title "Return on Investment by Industry (3-year period)"
+xychart-beta
+    title "Return on Investment by Industry (3-year period)"
     x-axis [Automotive, Aerospace, Healthcare, Smart_Cities, Industrial, Maritime]
-    y-axis "ROI " 0 --> 400
+    y-axis "ROI %" 0 --> 400
     bar [280, 190, 350, 220, 240, 160]
 ```
 
@@ -1388,8 +1389,8 @@ pie title "Return on Investment by Industry (3-year period)"
 
 ```mermaid
 timeline
-    title Timeline
     title Radar Technology Adoption Across Industries
+    
     section 2020-2022
         Early Adoption : Automotive ADAS
                       : Military Applications
@@ -1411,7 +1412,8 @@ timeline
 ### Performance Metrics Dashboard
 
 ```mermaid
-pie title "Key Performance Indicators Across Industries"
+xychart-beta
+    title "Key Performance Indicators Across Industries"
     x-axis [Accuracy, Reliability, Cost_Efficiency, Energy_Use, Maintenance]
     y-axis "Score (0-100)" 0 --> 100
     line [92, 96, 85, 78, 89]
@@ -1432,10 +1434,10 @@ pie title "Key Performance Indicators Across Industries"
 
 ```mermaid
 graph LR
-    A[Waymo Fleet 6,000+ Vehicles] --> B[4D Radar Array 360 Coverage]
-    B --> C[Real-time Processing Edge Computing]
-    C --> D[Cloud Analytics Fleet Learning]
-    D --> E[Service Optimization Route Planning]
+    A[Waymo Fleet<br/>6,000+ Vehicles] --> B[4D Radar Array<br/>360° Coverage]
+    B --> C[Real-time Processing<br/>Edge Computing]
+    C --> D[Cloud Analytics<br/>Fleet Learning]
+    D --> E[Service Optimization<br/>Route Planning]
 ```
 
 #### 2. Philips Healthcare Radar Monitoring (2024)
@@ -1450,9 +1452,9 @@ graph LR
 
 ```mermaid
 flowchart TD
-    A[ICU Patient Beds Radar Sensors] --> B[Vital Sign Processing ML Algorithms]
-    B --> C[Clinical Decision Support Early Warning System]
-    C --> D[Hospital Information System Integration]
+    A[ICU Patient Beds<br/>Radar Sensors] --> B[Vital Sign Processing<br/>ML Algorithms]
+    B --> C[Clinical Decision Support<br/>Early Warning System]
+    C --> D[Hospital Information System<br/>Integration]
 ```
 
 #### 3. Singapore Smart Traffic System (2024)
@@ -1467,15 +1469,16 @@ flowchart TD
 
 ```mermaid
 graph TB
-    A[Traffic Radar Network 2,000+ Intersections] --> B[Central AI Processing Traffic Optimization]
-    B --> C[Dynamic Signal Control Adaptive Timing]
-    C --> D[Citizen Services Real-time Updates]
+    A[Traffic Radar Network<br/>2,000+ Intersections] --> B[Central AI Processing<br/>Traffic Optimization]
+    B --> C[Dynamic Signal Control<br/>Adaptive Timing]
+    C --> D[Citizen Services<br/>Real-time Updates]
 ```
 
 ### Cost-Benefit Analysis
 
 ```mermaid
-pie title "Implementation Cost vs. 5-Year Savings (Millions USD)"
+xychart-beta
+    title "Implementation Cost vs. 5-Year Savings (Millions USD)"
     x-axis [Automotive, Healthcare, Smart_Cities, Industrial, Maritime]
     y-axis "Amount (M USD)" 0 --> 500
     bar [50, 25, 80, 40, 30]

@@ -45,7 +45,7 @@ graph TB
 
 ```mermaid
 mindmap
-  root((Research Network))
+  root((Root))
     Academic Institutions
       Universities
       Research Labs

@@ -258,7 +258,7 @@ graph TB
     end
     
     subgraph "Real-time Constraints"
-        I[&lt;1ms Latency] --> J[Deterministic Execution]
+        I[<1ms Latency] --> J[Deterministic Execution]
         J --> K[Bounded Memory]
         K --> L[Power Efficiency]
     end
@@ -478,20 +478,6 @@ graph TB
     subgraph "AI Capabilities"
         E[Pattern Recognition] --> D
         F[High-speed Processing] --> D
-        G[Data Analysis] --> D
-        H[Continuous Learning] --> D
-    end
-    
-    subgraph "Synergistic Outcomes"
-        D --> I[Enhanced Decision Making]
-        D --> J[Adaptive Systems]
-        D --> K[Explainable AI]
-        D --> L[Human-Centered Design]
-    end
-    
-    style A fill:#e3f2fd
-    style E fill:#fff3e0
-    style I fill:#e8f5e8
         G[Continuous Learning] --> D
     end
     
@@ -518,28 +504,6 @@ graph TB
 ```mermaid
 graph TB
     subgraph "Zero-Trust Principles"
-        A[Never Trust, Always Verify] --> D[Secure Access]
-        B[Least Privilege Access] --> D
-        C[Continuous Monitoring] --> D
-    end
-    
-    subgraph "Radar-Specific Security"
-        E[Signal Encryption] --> F[Processing Security]
-        G[Data Anonymization] --> F
-        H[Edge Validation] --> F
-    end
-    
-    subgraph "Privacy Protection"
-        I[Differential Privacy] --> J[Privacy-Preserving ML]
-        K[Homomorphic Encryption] --> J
-        L[Federated Learning] --> J
-    end
-    
-    D --> F
-    F --> J
-    
-    style A fill:#ffcdd2
-    style J fill:#c8e6c9
         A[Never Trust] --> B[Always Verify]
         B --> C[Least Privilege]
         C --> D[Assume Breach]
@@ -576,8 +540,8 @@ graph TB
 
 ```mermaid
 timeline
-    title Timeline
     title Future Radar AI Technologies (2025-2035)
+    
     2025-2026 : Quantum Computing
               : Room-temperature quantum processors
               : Quantum radar algorithms
@@ -607,7 +571,6 @@ timeline
 ### Technology Readiness Assessment
 
 ```mermaid
-%%{init: {"quadrantChart": {"chartWidth": 400, "chartHeight": 400}}}%%
 quadrantChart
     title Technology Readiness vs Impact Matrix
     x-axis Low Impact --> High Impact

@@ -348,7 +348,7 @@ If you use this library in your research, please cite:
 
 ```mermaid
 mindmap
-  root((Root))
+  root((Future Radar AI))
     Quantum Computing
       Quantum Algorithms
       Quantum Networks
@@ -375,8 +375,8 @@ mindmap
 
 ```mermaid
 timeline
-    title timeline
     title Documentation Platform Evolution
+
     2025 : Interactive Dashboards
          : AI Assistant Beta
          : Community Platform Launch

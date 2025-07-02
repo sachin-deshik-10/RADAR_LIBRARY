@@ -4,7 +4,7 @@
 
 ```mermaid
 mindmap
-  root((Root))
+  root((Radar Dataset Ecosystem))
     Automotive
       nuScenes-RadarNet
       CARRADA
@@ -42,8 +42,8 @@ mindmap
 
 ```mermaid
 timeline
-    title Timeline
     title Radar Dataset Development Timeline
+    
     2020-2021 : Early Automotive Datasets
               : CARRADA (Car Radar Dataset)
               : Basic range-doppler data
@@ -627,7 +627,7 @@ graph TD
 ```mermaid
 graph LR
     subgraph "Detection Tasks"
-        A1[Object Detection] --> B1[mAPIoU]
+        A1[Object Detection] --> B1[mAP@IoU]
         A2[Multi-class Detection] --> B2[Class-wise mAP]
         A3[Small Object Detection] --> B3[Small-mAP]
     end
@@ -680,9 +680,10 @@ graph LR
 ### Latest Benchmark Results (2024-2025)
 
 ```mermaid
-pie title "Object Detection Performance Evolution"
+xychart-beta
+    title "Object Detection Performance Evolution"
     x-axis ["2020 Methods", "2021 Methods", "2022 Methods", "2023 Methods", "2024 Methods", "2025 Methods"]
-    y-axis "mAP " 0 --> 100
+    y-axis "mAP %" 0 --> 100
     bar [45, 52, 61, 72, 83, 91]
     line [45, 52, 61, 72, 83, 91]
 ```
@@ -694,9 +695,9 @@ pie title "Object Detection Performance Evolution"
 ```mermaid
 graph TB
     subgraph "Primary Metrics"
-        A[mAP0.5] --> E[Overall Performance]
-        B[mAP0.75] --> E
-        C[mAP0.5:0.95] --> E
+        A[mAP@0.5] --> E[Overall Performance]
+        B[mAP@0.75] --> E
+        C[mAP@0.5:0.95] --> E
     end
     
     subgraph "Robustness Metrics"
@@ -855,7 +856,8 @@ pie title Dataset Distribution by Application Domain
 ### Data Volume Growth
 
 ```mermaid
-pie title "Radar Dataset Volume Growth (2020-2025)"
+xychart-beta
+    title "Radar Dataset Volume Growth (2020-2025)"
     x-axis [2020, 2021, 2022, 2023, 2024, 2025]
     y-axis "Data Volume (TB)" 0 --> 1000
     bar [50, 85, 140, 230, 380, 650]
@@ -865,25 +867,24 @@ pie title "Radar Dataset Volume Growth (2020-2025)"
 ### Quality Metrics Evolution
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#4caf50"}}}%%
-pie title "Dataset Quality Metrics Evolution (2020-2025)"
-    "Annotation Quality" : 85
-    "Coverage Diversity" : 75
-    "Resolution" : 90
-    "Accessibility" : 80
-    "Documentation" : 88
+radar
+    title Dataset Quality Metrics (2025 vs 2020)
+    x-axis 1 --> 10
+    "Annotation Quality" : [6, 9]
+    "Coverage Diversity" : [5, 8]
+    "Resolution" : [4, 9]
+    "Accessibility" : [7, 8]
+    "Documentation" : [5, 9]
 ```
 
 ### Research Impact Analysis
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#ff0000"}}}%%
-pie title "Research Publications Using Radar Datasets"
-    "CARRADA" : 45
-    "nuScenes" : 120
-    "RADDet" : 35
-    "NEXRAD" : 80
-    "Marine-2024" : 15
+xychart-beta
+    title "Research Publications Using Radar Datasets"
+    x-axis ["CARRADA", "nuScenes", "RADDet", "NEXRAD", "Marine-2024"]
+    y-axis "Number of Publications" 0 --> 150
+    bar [45, 120, 35, 80, 15]
 ```
 
 ## Future Dataset Needs
@@ -892,7 +893,7 @@ pie title "Research Publications Using Radar Datasets"
 
 ```mermaid
 mindmap
-  root((Next-Gen Datasets))
+  root((Future Dataset Needs))
     Scale
       Petabyte-scale datasets
       Global coverage
@@ -925,22 +926,8 @@ mindmap
 ```mermaid
 timeline
     title Emerging Dataset Development Roadmap
-    2025 : Foundation Datasets
-              : 4D radar datasets
-              : Multi-modal fusion
-              : Edge case collections
-    2026 : Advanced Integration
-              : Quantum radar data
-              : Real-time streaming
-              : Global standardization
-    2027 : Next-Generation
-              : Consciousness-aware data
-              : Bio-inspired datasets
-              : Metaverse integration
-    2028+ : Revolutionary Systems
-              : Quantum-biological data
-              : Universal frameworks
-              : Autonomous generation
+    
+    2025      : Foundation Datasets
               : Large-scale pre-training data
               : Multi-modal alignment
               : Synthetic-real hybrid
