@@ -1538,7 +1538,7 @@ Automotive Scenarios with Deep Learning [Paper](https://ieeexplore.ieee.org/abst
 - 2020-Interference Characterization in FMCW radars [Paper](https://ieeexplore.ieee.org/abstract/document/9266283)
 - 2020-Deep Interference Mitigation and Denoising of Real-World FMCW Radar Signals [Paper](https://ieeexplore.ieee.org/abstract/document/9114627); [Video](https://www.youtube.com/watch?v=DJY9Zk1p9-g)
 - 2019-Complex Signal Denoising and Interference Mitigation for Automotive Radar Using Convolutional Neural Networks [Paper](https://ieeexplore.ieee.org/document/9011164)
-- 2018-A Deep Learning Approach for Automotive Radar Interference Mitigation [Paper](https://ieeexplore.ieee.org/document/8690848)
+- 2019-A Deep Learning Approach for Automotive Radar Interference Mitigation [Paper](https://ieeexplore.ieee.org/document/8690848)
 
 ### Reviews
 
@@ -1558,7 +1558,3 @@ Automotive Scenarios with Deep Learning [Paper](https://ieeexplore.ieee.org/abst
 - 2022-Mitigation of Leakage and Stationary Clutters in Short-Range FMCW Radar With Hybrid Analog and Digital Compensation Technique [Paper](https://ieeexplore.ieee.org/abstract/document/9583883)
 
 - 2019-The Effect of Antenna Mutual Coupling on MIMO Radar System Performance [Paper](https://ieeexplore.ieee.org/abstract/document/8581509)
-
-## Imperfect Waveform Separation
-
-- 2020-Slow-Time MIMO-FMCW Automotive Radar Detection with Imperfect Waveform Separation [Paper](https://ieeexplore.ieee.org/document/9053892)
